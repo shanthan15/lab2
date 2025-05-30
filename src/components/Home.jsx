@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
-import "./Home.css";
 import home from "../images/home.png";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home-hero">
-      <Container>
-        <Row className="align-items-center">
+      <Container className="h-100">
+        <Row className="align-items-center h-100">
           <Col md={6} className="text-light text-center text-md-start">
             <h1 className="fw-bold">Welcome to ProdManage</h1>
             <p className="mt-3">
@@ -20,11 +20,7 @@ const Home = () => {
             </Button>
           </Col>
           <Col md={6} className="text-center">
-            <img
-              src={home}
-              alt="Dashboard Illustration"
-              className="img-fluid"
-            />
+            <img src={home} alt="Dashboard" className="img-fluid hero-img" />
           </Col>
         </Row>
       </Container>

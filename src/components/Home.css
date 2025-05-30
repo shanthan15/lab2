@@ -1,6 +1,30 @@
+/* Reset default margin/padding */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Remove padding from container */
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Full-screen gradient hero */
 .home-hero {
   background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
+}
+
+.hero-img {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
 }
